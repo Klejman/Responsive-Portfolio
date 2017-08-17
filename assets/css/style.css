@@ -54,6 +54,8 @@ h2, h3 {
     width: 100%;
 }
 
+
+
 #logo {
     width: 250px;
     height: 90px;
@@ -114,9 +116,9 @@ nav a:first-child {
 /* sidebar*/
 .sidebar {
     background: #fff;
-    padding: 30px;
+    padding: 1.875em;
     width: 100%;
-    max-width: 270px;
+    max-width: 16.875em;
     float: right;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -143,6 +145,7 @@ h3, .sidebar, h2 {
 /*footer*/
 
 footer {
+    position: sticky;
     background: #666;
     color: #fff;
     padding: 30px 0;
@@ -216,7 +219,11 @@ textarea{
 }
 
 text {
-    height: 200px;
+    height: 400px;
+}
+
+textarea{
+    height: 305px;
 }
 
 input[type=submit] {
@@ -230,6 +237,181 @@ input[type=submit] {
 
 
 
+/**************************
+ Media Query
+***************************/
+
+@media only screen and (max-width: 980px) {
+
+    /* organized css according to specificity hierarchy*/
+
+    body {
+     font-size: 16px;
+     line-height: 28px;
+     font-family: 'Arial', 'Helvetica Neue', Helvetica. sans-serif;
+     color:#777;
+    }
+
+    nav {
+        margin-right: 150px;
+        margin-top: 12px;
+    }
+
+    h1, h2, h3, p {
+        margin-bottom: 10px;
+    }
+    
+    h2, h3 {
+    font-size: 18px;
+    border-bottom: 1px solid ;
+
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    p:first-child {
+        margin-bottom: 0;
+    }
+
+
+    textarea {
+        height: 310px;
+    }
+
+    input[type=submit] {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    footer {
+        margin-top: 200px;
+        font-size: 14px;
+
+    }
+    
+    .auth-image {
+
+
+    }
+
+    .main-section {
+       max-width: 40%;
+       padding: 20px 20px 25px 20px;
+       margin-right: -150px;
+       margin-left: 150px;
+    }
+    
+    .sidebar { 
+      max-width: 25%; 
+      padding: 20px; 
+      border: 1px solid #ddd; 
+      margin-right: 150px; 
+      margin-left: 50px;
+    }
+
+
+
+     .social {
+     width: 50px;
+     height: 50px;
+     margin-left: 5px;
+    }
+
+    .work{
+        margin-left:30px;
+    }
+
+    #portPic {
+        margin-right: 30%;
+        margin-left: 12%;
+        margin-bottom: 20px;
+    }
+
+    
+
+    #logo {
+        font-size: 24px;
+        margin-left: 150px;
+        width: 250px;
+        height: 60px;
+        line-height: 60px;
+
+    }
+
+    #main-container {
+        padding-top: 90px;
+        margin-bottom: 200px;
+
+    }
+
+    
+
+
+ /*@media only screen and (max-width: 700px) {
+     .container {
+      width: 100%;
+
+     }
+
+     #main-container, .container {
+        margin-top: 0;
+     }
+
+     .main-section {
+         width: 650px;
+         margin-top: 50px;
+
+
+     }
+     
+     .sidebar {
+         padding-right: 10%;
+         padding-left: 10%;
+         margin-right: 5%;
+         margin-left: 5%;
+         float: none;
+
+     }
+
+     .auth-image {
+         width: 67.7083%;
+         margin-left: 16.14585%;
+         margin-right: 16.14585%;
+         float: none;
+     }
+
+     #logo {
+        width: 100%;
+
+     }
+
+     #masthead, #logo {
+        margin-top: 0;
+     }
+
+     .sidebar {
+        margin-top: 0;
+     }
+
+     nav {
+        width: 100%;
+        text-align: center;
+
+     }
+
+     nav a {
+        margin-bottom: 30px;
+
+     }
+
+     footer {
+         position: sticky;
+     }
+
+ }
 
 
 
